@@ -5,9 +5,10 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    float moveSpeed = 25f;
+    float moveSpeed = 10f;
     
-    void FixedUpdate()
+
+    void Update()
     {
         if (Input.GetKey("d") || Input.GetKey("right")){
             rb.AddForce(Vector2.right * moveSpeed);
@@ -17,5 +18,6 @@ public class playerMovement : MonoBehaviour
         {
             rb.AddForce(Vector2.left * moveSpeed);
         }
+        
     }
 }
