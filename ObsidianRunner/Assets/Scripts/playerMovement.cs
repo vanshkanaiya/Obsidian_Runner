@@ -5,7 +5,8 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    float moveSpeed = 10f;
+    [SerializeField]float moveSpeed = 10f;
+    [SerializeField]float JumpForce = 50f;
     
 
     void Update()
@@ -18,8 +19,8 @@ public class playerMovement : MonoBehaviour
             rb.AddForce(Vector2.left * moveSpeed);
         }
         
-        if (Input.GetKey(KeyCode.Space)) {
-            rb.AddForce(Vector2.up * moveSpeed);
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            rb.AddForce(Vector2.up * JumpForce);
         }
     }
 }
