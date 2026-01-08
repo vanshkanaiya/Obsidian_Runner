@@ -14,10 +14,12 @@ public class playerMovement : MonoBehaviour
             rb.AddForce(Vector2.right * moveSpeed);
         }
 
-        if (Input.GetKey("a") || Input.GetKey("left"))
-        {
+        if (Input.GetKey("a") || Input.GetKey("left")){
             rb.AddForce(Vector2.left * moveSpeed);
         }
         
+        if (Input.GetKey(KeyCode.Space)) {
+            rb.AddForce(Vector2.up * moveSpeed);
+        }
     }
 }
