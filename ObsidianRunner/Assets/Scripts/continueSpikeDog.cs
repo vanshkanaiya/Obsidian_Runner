@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class continueSpikeDog : MonoBehaviour
 {
@@ -29,5 +30,18 @@ public class continueSpikeDog : MonoBehaviour
         {
             target = RightEnd.position;  
         }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "spike-dog_10_conti_walk")
+        {
+            restatLevel();
+        }
+    }
+
+    void restatLevel()
+    {
+        Debug.Log("endGame Scene Called?");
+        SceneManager.LoadScene("endGame");
     }
 }
