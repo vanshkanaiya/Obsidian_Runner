@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -33,6 +34,22 @@ public class playerMovement : MonoBehaviour
         if (col.tag == "Enemy")
         {
             Debug.Log("Enemy!!!");
+            restatLevel();
         }
+
+        if (col.tag == "End") {
+            nextLevel();
+        }
+    }
+
+    void restatLevel()
+    {
+        Debug.Log("endGame Scene Called?");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void nextLevel() {
+        Debug.Log("Next Levl!!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
