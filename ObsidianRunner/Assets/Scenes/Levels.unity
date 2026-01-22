@@ -205,7 +205,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1439085347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: menuAndQuit, Assembly-CSharp
         m_MethodName: playGame
         m_Mode: 1
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1439085347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: menuAndQuit, Assembly-CSharp
         m_MethodName: playGame
         m_Mode: 1
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1439085347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: menuAndQuit, Assembly-CSharp
         m_MethodName: playGame
         m_Mode: 1
@@ -1009,7 +1009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1439085346}
-  - component: {fileID: 1439085347}
   m_Layer: 0
   m_Name: GameButtons
   m_TagString: Untagged
@@ -1040,18 +1039,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1325, y: -134}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1439085347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439085345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f7718116fe9d194989c8a3ff2b1ce20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1461296146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,7 +1390,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1439085347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: menuAndQuit, Assembly-CSharp
         m_MethodName: playGame
         m_Mode: 1

@@ -25,7 +25,7 @@ public class playerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * JumpForce);
         }
 
-        
+        quitLevel();
 
 
     }
@@ -51,5 +51,11 @@ public class playerMovement : MonoBehaviour
     void nextLevel() {
         Debug.Log("Next Levl!!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    void quitLevel(){
+        if (Input.GetKey(KeyCode.Escape)) {
+            SceneManager.LoadScene("Menu");
+        }
     }
 }
