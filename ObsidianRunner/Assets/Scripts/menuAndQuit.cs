@@ -13,4 +13,8 @@ public class menuAndQuit : MonoBehaviour
         Debug.Log("Game quit");
         Application.Quit();
     }
+
+    public void selectLevel() {
+        SceneManager.LoadScene("Levels");
+    } 
 }

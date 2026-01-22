@@ -8,7 +8,7 @@ public class playerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     [SerializeField] float moveSpeed = 25f;
-    [SerializeField]float JumpForce = 1000f;
+    [SerializeField]float JumpForce = 875f;
 
 
     void Update()

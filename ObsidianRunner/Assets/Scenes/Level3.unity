@@ -5144,7 +5144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1587887447}
   moveSpeed: 25
-  JumpForce: 850
+  JumpForce: 875
 --- !u!61 &1587887446
 BoxCollider2D:
   m_ObjectHideFlags: 0

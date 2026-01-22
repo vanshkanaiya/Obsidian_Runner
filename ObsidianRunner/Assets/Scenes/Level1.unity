@@ -1783,7 +1783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 647151384}
   moveSpeed: 25
-  JumpForce: 1200
+  JumpForce: 875
 --- !u!1 &713575391
 GameObject:
   m_ObjectHideFlags: 0
