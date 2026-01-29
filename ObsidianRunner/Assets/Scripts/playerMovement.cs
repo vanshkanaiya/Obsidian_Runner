@@ -7,6 +7,12 @@ using TMPro;
 
 public class playerMovement : MonoBehaviour
 {
+    int maxLevel;
+    void Start()
+    {
+        maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
+    }
+
     public Rigidbody2D rb;
     [SerializeField] float moveSpeed = 25f;
     [SerializeField]float JumpForce = 875f;
@@ -56,6 +62,7 @@ public class playerMovement : MonoBehaviour
     void nextLevel() {
         Debug.Log("Next Levl!!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.SetInt("maxLevel", SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void quitLevel(){
