@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class playerMovement : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class playerMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 25f;
     [SerializeField]float JumpForce = 875f;
 
+
+    public Transform player;
+    public TextMeshProUGUI scoreText;
 
     void Update()
     {
@@ -25,6 +29,7 @@ public class playerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * JumpForce);
         }
 
+        showScore();
         quitLevel();
 
 
@@ -57,5 +62,10 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape)) {
             SceneManager.LoadScene("Menu");
         }
+    }
+
+    void showScore() {
+        scoreText.text = "0";
+        scoreText.text = player.position.x.ToString("0");
     }
 }
