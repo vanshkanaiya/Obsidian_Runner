@@ -15,4 +15,8 @@ public class level : MonoBehaviour
         SceneManager.LoadScene(levelName);
         PlayerPrefs.SetInt("maxLevel", levelId);
     }
+
+    public void backHome() {
+        SceneManager.LoadScene("Menu");
+    }
 }

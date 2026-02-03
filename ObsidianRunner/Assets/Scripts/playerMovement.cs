@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -11,6 +10,7 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
+        Camera.main.gameObject.GetComponent<FollowPlayer>().player = transform;
     }
 
     public Rigidbody2D rb;
