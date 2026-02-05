@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 7f2ae58ec5d44ea4db4c712f19e89f8f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playPausePanel_30
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 350
+        width: 411
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69adeeead1f70448acc70e66e46ba0f
+      internalID: -157627902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playPausePanel_32
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 350
+        width: 393
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2618054ced956e46845b0a14a80d0c9
+      internalID: 243783060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playPausePanel_52
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 345
+        width: 399
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 6, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335fac0afdefdf0478d782804ad8d7f7
+      internalID: 1620585240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      playPausePanel_0: -961558384
+      playPausePanel_1: -710292643
+      playPausePanel_10: 314715663
+      playPausePanel_11: -884115263
+      playPausePanel_12: -1742577131
+      playPausePanel_13: -1926596182
+      playPausePanel_14: 444384610
+      playPausePanel_15: -48196681
+      playPausePanel_16: -1287943766
+      playPausePanel_17: 630653518
+      playPausePanel_18: 1361635299
+      playPausePanel_19: -1157650454
+      playPausePanel_2: 1525442091
+      playPausePanel_20: -894821061
+      playPausePanel_21: 2134446255
+      playPausePanel_22: -1726779642
+      playPausePanel_23: 658829998
+      playPausePanel_24: -1040046070
+      playPausePanel_25: 43957274
+      playPausePanel_26: -2032632495
+      playPausePanel_27: -2017068047
+      playPausePanel_28: -1395844897
+      playPausePanel_29: 1120958165
+      playPausePanel_3: 1689040939
+      playPausePanel_30: -157627902
+      playPausePanel_31: 1873334742
+      playPausePanel_32: 243783060
+      playPausePanel_33: -1993838696
+      playPausePanel_34: 643228692
+      playPausePanel_35: -2110418501
+      playPausePanel_36: -1746301915
+      playPausePanel_37: -1470781090
+      playPausePanel_38: 541113216
+      playPausePanel_39: -687655506
+      playPausePanel_4: -542820854
+      playPausePanel_40: 2031290967
+      playPausePanel_41: 1788881653
+      playPausePanel_42: 41878391
+      playPausePanel_43: 600146616
+      playPausePanel_44: 1084001158
+      playPausePanel_45: 1997813697
+      playPausePanel_46: 604690603
+      playPausePanel_47: 70169699
+      playPausePanel_48: 602555729
+      playPausePanel_49: -196807105
+      playPausePanel_5: 838692246
+      playPausePanel_50: 1991842331
+      playPausePanel_51: 416723314
+      playPausePanel_52: 1620585240
+      playPausePanel_53: -1636979381
+      playPausePanel_54: 700856130
+      playPausePanel_55: 572507543
+      playPausePanel_56: 1493924189
+      playPausePanel_57: -1408206511
+      playPausePanel_58: 519256837
+      playPausePanel_59: 1013227053
+      playPausePanel_6: 688913324
+      playPausePanel_60: -1543865576
+      playPausePanel_7: -877936418
+      playPausePanel_8: 1765457078
+      playPausePanel_9: -119987667
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -22,6 +22,6 @@ public class menuAndQuit : MonoBehaviour
     }
 
     public void selectLevel() {
-        SceneManager.LoadScene("Levels");
+        SceneManager.LoadScene("Levels");        
     } 
 }
