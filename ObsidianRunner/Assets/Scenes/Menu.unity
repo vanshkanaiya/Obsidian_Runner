@@ -765,8 +765,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   labelButton: {fileID: 2017806673}
+  button1: {fileID: 1360353508}
+  button2: {fileID: 1876356040}
   time: 1.5
   targetPos: {x: 39, y: 0}
+  targetPosb1: {x: 0, y: 0}
+  targetPosb2: {x: 0, y: 0}
 --- !u!1 &213855605
 GameObject:
   m_ObjectHideFlags: 0
