@@ -9,7 +9,7 @@ public class playerMovement : MonoBehaviour
     int maxLevel;
     void Start()
     {
-        maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
+        //maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
         Camera.main.gameObject.GetComponent<FollowPlayer>().player = transform;
     }
 
@@ -61,8 +61,7 @@ public class playerMovement : MonoBehaviour
 
     void nextLevel() {
         Debug.Log("Next Levl!!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        PlayerPrefs.SetInt("maxLevel", SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("level");
     }
 
     void quitLevel(){
@@ -72,7 +71,7 @@ public class playerMovement : MonoBehaviour
     }
 
     void showScore() {
-        scoreText.text = "0";
-        scoreText.text = player.position.x.ToString("0");
+        //scoreText.text = "0";
+        //scoreText.text = player.position.x.ToString("0");
     }
 }
