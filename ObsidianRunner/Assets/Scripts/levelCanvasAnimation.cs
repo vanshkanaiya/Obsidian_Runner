@@ -11,7 +11,14 @@ public class levelCanvasAnimation : MonoBehaviour
     [SerializeField] Vector2 targetPosb1;
     [SerializeField] Vector2 targetPosb2;
 
-    void Start()
+    public int TotalLevels;
+
+    private void Start()
+    {
+        LevelData.Instance.TotalLevels = TotalLevels;
+    }
+
+    void OnEnable()
     {
         moveLable(labelButton);
         moveButon1(button1);

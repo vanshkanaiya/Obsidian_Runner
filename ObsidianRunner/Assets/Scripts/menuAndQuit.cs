@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class menuAndQuit : MonoBehaviour
 {
+    public GameObject levelCanvas;
+    public GameObject menuCanvas;
+
     int maxLevel;
+
     void Start()
     {
         maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
@@ -22,6 +26,12 @@ public class menuAndQuit : MonoBehaviour
     }
 
     public void selectLevel() {
-        SceneManager.LoadScene("Levels");        
-    } 
+        menuCanvas.SetActive(false);
+        levelCanvas.SetActive(true);
+    }
+
+    public void backHome() {
+        menuCanvas.SetActive(true);
+        levelCanvas.SetActive(false);
+    }
 }
