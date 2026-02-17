@@ -7,11 +7,7 @@ using TMPro;
 public class playerMovement : MonoBehaviour
 {
     int maxLevel;
-    void Start()
-    {
-        //maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
-        Camera.main.gameObject.GetComponent<FollowPlayer>().player = transform;
-    }
+    
 
     public Rigidbody2D rb;
     [SerializeField] float moveSpeed = 25f;
@@ -21,19 +17,33 @@ public class playerMovement : MonoBehaviour
     public Transform player;
     public TextMeshProUGUI scoreText;
 
+    private int jumpFlag = 0;
+
+    void Start()
+    {
+        //maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
+        Camera.main.gameObject.GetComponent<FollowPlayer>().player = transform;
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Update()
     {
+        float moveX = 0;
         if (Input.GetKey("d") || Input.GetKey("right")) {
-            rb.AddForce(Vector2.right * moveSpeed);
+            moveX = moveSpeed;
         }
 
         if (Input.GetKey("a") || Input.GetKey("left")) {
-            rb.AddForce(Vector2.left * moveSpeed);
+            moveX = -moveSpeed;
         }
 
         if (Input.GetKeyDown(KeyCode.Space)) {
             rb.AddForce(Vector2.up * JumpForce);
+            jumpFlag++;
+
         }
+
+        rb.velocity = new Vector2(moveX, rb.velocity.y);
 
         showScore();
         quitLevel();
