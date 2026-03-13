@@ -17,7 +17,7 @@ public class menuAndQuit : MonoBehaviour
     }
 
     public void playGame() {
-        SceneManager.LoadScene("level" + maxLevel);
+        SceneManager.LoadScene("Level");
     }
 
     public void quitGame() {
