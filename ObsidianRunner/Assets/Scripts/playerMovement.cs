@@ -19,6 +19,7 @@ public class playerMovement : MonoBehaviour
 
     private int jumpFlag = 0;
 
+
     void Start()
     {
         //maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
@@ -71,7 +72,8 @@ public class playerMovement : MonoBehaviour
 
     void nextLevel() {
         Debug.Log("Next Levl!!");
-        SceneManager.LoadScene("level");
+        //SceneManager.LoadScene("level");
+        //LevelManager.Instance.LoadNextLevel();
     }
 
     void quitLevel(){
