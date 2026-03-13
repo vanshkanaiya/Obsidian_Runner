@@ -696,8 +696,8 @@ MonoBehaviour:
   Levels:
   - {fileID: 1651796402954922743, guid: 63aeee1f189191d4db2833fcef19d63f, type: 3}
   - {fileID: 2350631205069677837, guid: 4c8228bc06666bb40a3dff2c5136e832, type: 3}
-  - {fileID: 8602402555761786920, guid: 92f192fd42ffe9b499191cc2810e60de, type: 3}
   - {fileID: 6397677901497842852, guid: 831b62699f5eda041ab4f70c90ae9cef, type: 3}
+  - {fileID: 6397677901497842852, guid: e8a751b7018612048b3f05e7ed114136, type: 3}
 --- !u!4 &1211803336
 Transform:
   m_ObjectHideFlags: 0
