@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //using System.Collections;
 //using System.Collections.Generic;
 //using UnityEngine;
@@ -12,8 +11,8 @@
 //        Instantiate(Levels[levelIndex]);
 //    }
 //}
-=======
->>>>>>> e890ea6ac953de3d3ea7753f320a3bbafe64c67d
+
+
 using System.Collections.Generic;
 using UnityEngine;
 
