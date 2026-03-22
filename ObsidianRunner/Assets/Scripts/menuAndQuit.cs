@@ -16,7 +16,13 @@ public class menuAndQuit : MonoBehaviour
         maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
     }
 
-    public void playGame() {
+    //public void playGame() {
+    //    SceneManager.LoadScene("Level");
+    //}
+    public void playGame()
+    {
+        int savedLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+        LevelData.Instance.CurrentLevel = savedLevel;
         SceneManager.LoadScene("Level");
     }
 
@@ -28,10 +34,12 @@ public class menuAndQuit : MonoBehaviour
     public void selectLevel() {
         menuCanvas.SetActive(false);
         levelCanvas.SetActive(true);
+        Debug.Log("Select Level..!");
     }
 
     public void backHome() {
         menuCanvas.SetActive(true);
         levelCanvas.SetActive(false);
+        Debug.Log("Back Clicked..!!");
     }
 }

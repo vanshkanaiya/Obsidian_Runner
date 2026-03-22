@@ -5,14 +5,29 @@ public class FollowPlayer : MonoBehaviour
     public Transform player;
     public Vector3 offset;
 
+    //void LateUpdate()
+    //{
+    //    if (player == null) return;
+
+    //    transform.position = new Vector3(
+    //        player.position.x + offset.x,
+    //        player.position.y + offset.y,
+    //        -10f   
+    //    );
+    //}
+    public float smoothSpeed = 5f;
+
     void LateUpdate()
     {
         if (player == null) return;
 
-        transform.position = new Vector3(
-            player.position.x + offset.x,
-            player.position.y + offset.y,
-            -10f   
+        Vector3 targetPosition = player.position + offset;
+        targetPosition.z = -10f;
+
+        transform.position = Vector3.Lerp(
+            transform.position,
+            targetPosition,
+            smoothSpeed * Time.deltaTime
         );
     }
 }

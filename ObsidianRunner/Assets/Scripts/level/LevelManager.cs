@@ -42,6 +42,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        currentLevelIndex = LevelData.Instance.CurrentLevel - 1;
         LoadLevel(currentLevelIndex);
     }
 
@@ -59,6 +60,8 @@ public class LevelManager : MonoBehaviour
         }
 
         currentLevelIndex++;
+        PlayerPrefs.SetInt("CurrentLevel", currentLevelIndex + 1);
+        PlayerPrefs.Save();
 
         if (currentLevelIndex < Levels.Count)
         {
