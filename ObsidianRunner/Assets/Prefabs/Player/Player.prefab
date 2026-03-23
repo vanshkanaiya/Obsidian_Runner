@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7081364593052391078}
-  moveSpeed: 25
+  moveSpeed: 10
   JumpForce: 875
   player: {fileID: 4396011538448983408}
   scoreText: {fileID: 0}

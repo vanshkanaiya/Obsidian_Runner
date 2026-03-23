@@ -25,6 +25,7 @@ public class playerMovement : MonoBehaviour
         //maxLevel = PlayerPrefs.GetInt("maxLevel", 1);
         Camera.main.gameObject.GetComponent<FollowPlayer>().player = transform;
         rb = GetComponent<Rigidbody2D>();
+        StaticVars.PlayerSpawn?.Invoke(transform);
     }
 
     void Update()
@@ -46,10 +47,7 @@ public class playerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(moveX, rb.velocity.y);
 
-        showScore();
         quitLevel();
-
-
     }
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -60,7 +58,7 @@ public class playerMovement : MonoBehaviour
         }
 
         if (col.tag == "End") {
-            nextLevel();
+            LevelManager.Instance.levelComplateUI();
         }
     }
 
@@ -80,10 +78,5 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape)) {
             SceneManager.LoadScene("Menu");
         }
-    }
-
-    void showScore() {
-        //scoreText.text = "0";
-        //scoreText.text = player.position.x.ToString("0");
     }
 }

@@ -27,6 +27,9 @@ public class LevelManager : MonoBehaviour
     private int currentLevelIndex = 0;
     private GameObject currentLevel;
 
+    public GameObject gameUI;
+    public GameObject scoreBoard;
+
     private void Awake()
     {
         // Singleton setup
@@ -51,7 +54,10 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Loading Level: " + index);
         currentLevel = Instantiate(Levels[index]);
     }
-
+    public void levelComplateUI() { 
+        gameUI.SetActive(false);
+        scoreBoard.SetActive(true);
+    }
     public void LoadNextLevel()
     {
         if (currentLevel != null)
@@ -65,6 +71,8 @@ public class LevelManager : MonoBehaviour
 
         if (currentLevelIndex < Levels.Count)
         {
+            gameUI.SetActive(true);
+            scoreBoard.SetActive(false);
             LoadLevel(currentLevelIndex);
         }
         else
