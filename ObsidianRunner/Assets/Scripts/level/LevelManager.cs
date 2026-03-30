@@ -14,6 +14,7 @@
 
 
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -29,6 +30,8 @@ public class LevelManager : MonoBehaviour
 
     public GameObject gameUI;
     public GameObject scoreBoard;
+
+    public TextMeshProUGUI levelName;
 
     private void Awake()
     {
@@ -53,6 +56,7 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Loading Level: " + index);
         currentLevel = Instantiate(Levels[index]);
+        levelName.text = Levels[index].name;
     }
     public void levelComplateUI() { 
         gameUI.SetActive(false);
@@ -79,5 +83,9 @@ public class LevelManager : MonoBehaviour
         {
             Debug.Log("All Levels Completed!");
         }
+    }
+
+    public void restartLevel() {
+        LoadLevel(currentLevelIndex);
     }
 }

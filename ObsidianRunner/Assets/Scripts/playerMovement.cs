@@ -56,20 +56,20 @@ public class playerMovement : MonoBehaviour
         }
 
         if (col.tag == "End") {
-            LevelManager.Instance.levelComplateUI();
+            nextLevel();
         }
     }
 
     void restatLevel()
     {
-        Debug.Log("endGame Scene Called?");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Debug.Log("endGame Scene Called?");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        LevelManager.Instance.restartLevel();
     }
 
     void nextLevel() {
         Debug.Log("Next Levl!!");
-        //SceneManager.LoadScene("level");
-        //LevelManager.Instance.LoadNextLevel();
+        LevelManager.Instance.levelComplateUI();
     }
 
     void quitLevel(){
