@@ -16,6 +16,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class LevelManager : MonoBehaviour
 
     public GameObject gameUI;
     public GameObject scoreBoard;
+    public GameObject restartUI;
 
     public TextMeshProUGUI levelName;
 
@@ -61,6 +63,13 @@ public class LevelManager : MonoBehaviour
     public void levelComplateUI() { 
         gameUI.SetActive(false);
         scoreBoard.SetActive(true);
+        restartUI.SetActive(false);
+    }
+    public void restartLevelUI()
+    {
+        gameUI.SetActive(false);
+        scoreBoard.SetActive(false);
+        restartUI.SetActive(true);
     }
     public void LoadNextLevel()
     {
@@ -77,6 +86,7 @@ public class LevelManager : MonoBehaviour
         {
             gameUI.SetActive(true);
             scoreBoard.SetActive(false);
+            restartUI.SetActive(false);
             LoadLevel(currentLevelIndex);
         }
         else
@@ -85,7 +95,22 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void restartLevel() {
+    public void restartLevel()
+    {
+        if (currentLevel != null)
+        {
+            Destroy(currentLevel);
+            Debug.Log("destroy");
+        }
+        gameUI.SetActive(true);
+        scoreBoard.SetActive(false);
+        restartUI.SetActive(false);
+
         LoadLevel(currentLevelIndex);
+    }
+
+    public void stopLevel()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

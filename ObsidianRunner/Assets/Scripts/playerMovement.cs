@@ -62,9 +62,7 @@ public class playerMovement : MonoBehaviour
 
     void restatLevel()
     {
-        //Debug.Log("endGame Scene Called?");
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        LevelManager.Instance.restartLevel();
+        LevelManager.Instance.restartLevelUI();
     }
 
     void nextLevel() {

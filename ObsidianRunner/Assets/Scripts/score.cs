@@ -7,6 +7,8 @@ public class score : MonoBehaviour
 {
     public Transform player;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI restartText;
+    public TextMeshProUGUI completText;
     public int CurrentScore;
 
     private void OnEnable()
@@ -31,6 +33,11 @@ public class score : MonoBehaviour
             return;
 
         scoreText.text = player.position.x.ToString("0");
-        CurrentScore = (int)player.position.x;
+        if (CurrentScore < (int)player.position.x)
+        {
+            CurrentScore = (int)player.position.x;
+            restartText.text = CurrentScore.ToString();
+            completText.text = CurrentScore.ToString();
+        }
     }
 }
