@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4396011538448983408}
   - component: {fileID: 7081364593052391078}
   - component: {fileID: 1202851247218461517}
+  - component: {fileID: -3653074058527920540}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MonoBehaviour:
   JumpForce: 875
   player: {fileID: 4396011538448983408}
   scoreText: {fileID: 0}
+  pm: {fileID: 1202851247218461517}
+--- !u!114 &-3653074058527920540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236181514785802792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14595cfe14290c64d84e7f9254b9adc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 1202851247218461517}
 --- !u!1 &3471866858344258248
 GameObject:
   m_ObjectHideFlags: 0
