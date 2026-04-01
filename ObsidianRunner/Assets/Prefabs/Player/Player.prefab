@@ -80,7 +80,6 @@ MonoBehaviour:
   JumpForce: 875
   player: {fileID: 4396011538448983408}
   scoreText: {fileID: 0}
-  pm: {fileID: 1202851247218461517}
 --- !u!114 &-3653074058527920540
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,11 +33,11 @@ public class score : MonoBehaviour
             return;
 
         scoreText.text = player.position.x.ToString("0");
-        if (CurrentScore < (int)player.position.x)
-        {
+        //if (CurrentScore < (int)player.position.x)
+        //{
             CurrentScore = (int)player.position.x;
             restartText.text = CurrentScore.ToString();
             completText.text = CurrentScore.ToString();
-        }
+        //}
     }
 }
