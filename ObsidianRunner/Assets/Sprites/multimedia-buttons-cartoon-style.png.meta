@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: 13eef3644ae78014fb70fef288a7b2cc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_0
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1426
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a320bcfe92b12ce4d887f984025a97b3
+      internalID: -745502774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1426
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745b211faae3b0f4399e5ace3be284d5
+      internalID: 1274700197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_2
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1426
+        width: 328
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cbfe879caea174a8a1b5297d66bc2c
+      internalID: -2082978951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_3
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1426
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a016c2c4a5368f42b7b207a940e4671
+      internalID: -1733056648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_4
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1426
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baa40b445276924aa5b906b40d5e9d5
+      internalID: -2134480543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_5
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1030
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12178f732d036b64cb1b05da088fe687
+      internalID: 2023066499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_6
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1030
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4374bdde549b584f93e738508b18a61
+      internalID: -221676329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_7
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1030
+        width: 328
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc016ba516c0be42a7896f74ede223a
+      internalID: 483465668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_8
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1030
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbfe532e177836489f14a1c1b23df5d
+      internalID: -1885466484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_9
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1030
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a3d0f3b60e0ae4791c4f1277d751f9
+      internalID: -1181143173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 634
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc0ef85f18c9204eb8e349092f80d0f
+      internalID: -1485947588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_11
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 634
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232d1bc9cc4bbb04bbff39e11cd6f4ca
+      internalID: 526279664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_12
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 634
+        width: 328
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40c98326c317dd4597db241ec2e89e9
+      internalID: 856321891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_13
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 634
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f679a434417e714f98b2d9f9b5e1601
+      internalID: 1127537926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_14
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 634
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad83dcf0fe395c847aaae1ae5b6281f9
+      internalID: 492831315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 238
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08deb6bfc5b9a7849be323636c9e37be
+      internalID: 821136343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_16
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 238
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ee0d4bf23e2ac4fa1da7e4ca74b111
+      internalID: 676528554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_17
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 238
+        width: 328
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2149b548d4652349bff4a3da38aea41
+      internalID: 811807918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_18
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 238
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fcfee2dc0a1dd44a85a6404fb6aa6b
+      internalID: 1878867345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multimedia-buttons-cartoon-style_19
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 238
+        width: 327
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f043b4e3238533e4facfa371e3d93ffc
+      internalID: 429013332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      multimedia-buttons-cartoon-style_0: -745502774
+      multimedia-buttons-cartoon-style_1: 1274700197
+      multimedia-buttons-cartoon-style_10: -1485947588
+      multimedia-buttons-cartoon-style_11: 526279664
+      multimedia-buttons-cartoon-style_12: 856321891
+      multimedia-buttons-cartoon-style_13: 1127537926
+      multimedia-buttons-cartoon-style_14: 492831315
+      multimedia-buttons-cartoon-style_15: 821136343
+      multimedia-buttons-cartoon-style_16: 676528554
+      multimedia-buttons-cartoon-style_17: 811807918
+      multimedia-buttons-cartoon-style_18: 1878867345
+      multimedia-buttons-cartoon-style_19: 429013332
+      multimedia-buttons-cartoon-style_2: -2082978951
+      multimedia-buttons-cartoon-style_3: -1733056648
+      multimedia-buttons-cartoon-style_4: -2134480543
+      multimedia-buttons-cartoon-style_5: 2023066499
+      multimedia-buttons-cartoon-style_6: -221676329
+      multimedia-buttons-cartoon-style_7: 483465668
+      multimedia-buttons-cartoon-style_8: -1885466484
+      multimedia-buttons-cartoon-style_9: -1181143173
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
