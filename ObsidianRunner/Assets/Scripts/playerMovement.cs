@@ -45,6 +45,7 @@ public class playerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(moveX, rb.velocity.y);
 
+        pauseLevel();
         quitLevel();
     }
     void OnTriggerEnter2D(Collider2D col)
@@ -75,4 +76,13 @@ public class playerMovement : MonoBehaviour
             SceneManager.LoadScene("Menu");
         }
     }
+
+    void pauseLevel() {
+        if (Input.GetKey("p"))
+        {
+            LevelManager.Instance.pauseGame();
+        }
+    }
+
+
 }

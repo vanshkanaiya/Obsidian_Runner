@@ -32,8 +32,11 @@ public class LevelManager : MonoBehaviour
     public GameObject gameUI;
     public GameObject scoreBoard;
     public GameObject restartUI;
+    public GameObject pauseUI;
 
     public TextMeshProUGUI levelName;
+
+    public playerMovement plyMov;
 
     private void Awake()
     {
@@ -52,6 +55,8 @@ public class LevelManager : MonoBehaviour
     {
         currentLevelIndex = LevelData.Instance.CurrentLevel - 1;
         LoadLevel(currentLevelIndex);
+
+        plyMov = FindAnyObjectByType<playerMovement>();
     }
 
     void LoadLevel(int index)
@@ -112,5 +117,15 @@ public class LevelManager : MonoBehaviour
     public void stopLevel()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void pauseGame() { 
+        plyMov.enabled = false;
+        pauseUI.SetActive(true);
+    }
+
+    public void resumeGame() {
+        plyMov.enabled=true;
+        pauseUI.SetActive(false);
     }
 }
