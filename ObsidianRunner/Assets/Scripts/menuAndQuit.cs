@@ -5,6 +5,7 @@ public class menuAndQuit : MonoBehaviour
 {
     public GameObject levelCanvas;
     public GameObject menuCanvas;
+    public GameObject settingCanvas;
 
     int maxLevel;
 
@@ -38,5 +39,10 @@ public class menuAndQuit : MonoBehaviour
         menuCanvas.SetActive(true);
         levelCanvas.SetActive(false);
         Debug.Log("Back Clicked..!!");
+    }
+
+    public void settingCanvasCall() {
+        menuCanvas.SetActive(false);
+        settingCanvas.SetActive(true);
     }
 }
