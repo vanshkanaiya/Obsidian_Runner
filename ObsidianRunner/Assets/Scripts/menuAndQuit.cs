@@ -45,4 +45,10 @@ public class menuAndQuit : MonoBehaviour
         menuCanvas.SetActive(false);
         settingCanvas.SetActive(true);
     }
+
+    public void backHomeFromSetting()
+    {
+        menuCanvas.SetActive(true);
+        settingCanvas.SetActive(false);
+    }
 }
