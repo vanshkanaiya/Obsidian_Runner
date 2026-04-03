@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class volumeSetting : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
-    [SerializeField] Slider music  Slider;
+    [SerializeField] Slider musicSlider;
     // Start is called before the first frame update
     void Start()
     {
