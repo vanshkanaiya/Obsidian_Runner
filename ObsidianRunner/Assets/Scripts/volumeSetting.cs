@@ -10,12 +10,20 @@ public class volumeSetting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        load();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void changeVolume()
     {
-        
+        AudioListener.volume = volumeSlider.value;
+        save();
+    }
+    public void load()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("volume", 1);
+    }
+    public void save()
+    {
+        PlayerPrefs.SetFloat("volume", volumeSlider.value);
     }
 }
