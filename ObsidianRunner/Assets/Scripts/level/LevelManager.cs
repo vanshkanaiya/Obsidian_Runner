@@ -64,7 +64,7 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Loading Level: " + index);
         currentLevel = Instantiate(Levels[index]);
         levelName.text = Levels[index].name;
-    }
+    }   
     public void levelComplateUI() { 
         gameUI.SetActive(false);
         scoreBoard.SetActive(true);
