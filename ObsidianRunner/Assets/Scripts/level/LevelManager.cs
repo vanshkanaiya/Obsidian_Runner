@@ -33,6 +33,7 @@ public class LevelManager : MonoBehaviour
     public GameObject scoreBoard;
     public GameObject restartUI;
     public GameObject pauseUI;
+    public GameObject AllLevelComplateIU;
 
     public TextMeshProUGUI levelName;
 
@@ -97,6 +98,8 @@ public class LevelManager : MonoBehaviour
         else
         {
             Debug.Log("All Levels Completed!");
+            AllLevelComplateIU.SetActive(true);
+            scoreBoard.SetActive(false);
         }
     }
 
@@ -128,4 +131,5 @@ public class LevelManager : MonoBehaviour
         plyMov.enabled=true;
         pauseUI.SetActive(false);
     }
+
 }
