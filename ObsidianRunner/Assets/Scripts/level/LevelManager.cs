@@ -123,7 +123,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void pauseGame() { 
-        plyMov.enabled = false;
+        //plyMov.enabled = false;
         pauseUI.SetActive(true);
     }
 

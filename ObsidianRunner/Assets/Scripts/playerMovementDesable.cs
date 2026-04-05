@@ -16,4 +16,12 @@ public class playerMovementDesable : MonoBehaviour
             GetComponent<playerMovement>().enabled = false;
         }
     }
+    private void Update()
+    {
+        if (Input.GetKey("p"))
+        {
+            GetComponent<playerMovement>().enabled = false;
+            LevelManager.Instance.pauseGame();
+        }
+    }
 }
