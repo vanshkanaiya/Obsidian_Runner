@@ -20,7 +20,7 @@ public class menuAndQuit : MonoBehaviour
     public void playGame()
     {
         int savedLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
-        LevelData.Instance.CurrentLevel = savedLevel;
+        LevelData.Instance.CurrentLevel = 1;
         SceneManager.LoadScene("Level");
     }
 
