@@ -2428,6 +2428,7 @@ MonoBehaviour:
   scoreText: {fileID: 1698532815}
   restartText: {fileID: 1344657236}
   completText: {fileID: 1145565315}
+  levelPauseText: {fileID: 1656728654}
   CurrentScore: 0
 --- !u!1 &1145565313
 GameObject:
@@ -2979,6 +2980,7 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   restartText: {fileID: 0}
   completText: {fileID: 0}
+  levelPauseText: {fileID: 0}
   CurrentScore: 0
 --- !u!114 &1344657236
 MonoBehaviour:
@@ -3822,6 +3824,7 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   restartText: {fileID: 0}
   completText: {fileID: 0}
+  levelPauseText: {fileID: 0}
   CurrentScore: 0
 --- !u!114 &1656728654
 MonoBehaviour:

@@ -123,12 +123,13 @@ public class LevelManager : MonoBehaviour
     }
 
     public void pauseGame() { 
-        //plyMov.enabled = false;
+        plyMov.enabled = false;
         pauseUI.SetActive(true);
     }
 
     public void resumeGame() {
         plyMov.enabled=true;
+        //playerMovementDesable.Instance.playerMovementEnable();
         pauseUI.SetActive(false);
     }
 

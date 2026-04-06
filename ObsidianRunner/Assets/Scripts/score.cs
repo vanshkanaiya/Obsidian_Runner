@@ -9,6 +9,7 @@ public class score : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI restartText;
     public TextMeshProUGUI completText;
+    public TextMeshProUGUI levelPauseText;
     public int CurrentScore;
 
     private void OnEnable()
@@ -38,6 +39,7 @@ public class score : MonoBehaviour
             CurrentScore = (int)player.position.x;
             restartText.text = CurrentScore.ToString();
             completText.text = CurrentScore.ToString();
+            levelPauseText.text = CurrentScore.ToString();
         //}
     }
 }

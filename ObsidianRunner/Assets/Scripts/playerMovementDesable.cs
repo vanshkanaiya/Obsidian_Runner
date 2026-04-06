@@ -4,7 +4,22 @@ using UnityEngine;
 
 public class playerMovementDesable : MonoBehaviour
 {
+    //public static playerMovementDesable Instance;
+
     public playerMovement playerMovement;
+
+    //private void Awake()
+    //{
+    //    // Singleton setup
+    //    if (Instance == null)
+    //    {
+    //        Instance = this;
+    //    }
+    //    else
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
@@ -20,8 +35,18 @@ public class playerMovementDesable : MonoBehaviour
     {
         if (Input.GetKey("p"))
         {
-            GetComponent<playerMovement>().enabled = false;
-            LevelManager.Instance.pauseGame();
+            try
+            {
+                GetComponent<playerMovement>().enabled = false;
+                LevelManager.Instance.pauseGame();
+            } catch {
+                Debug.Log("Error..!");
+            }
         }
     }
+
+    //public void playerMovementEnable()
+    //{
+    //    GetComponent<playerMovement>().enabled = true;
+    //}
 }
