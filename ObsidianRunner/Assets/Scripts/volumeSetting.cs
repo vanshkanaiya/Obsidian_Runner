@@ -7,23 +7,37 @@ public class volumeSetting : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     [SerializeField] Slider musicSlider;
-    // Start is called before the first frame update
+    
+    [SerializeField] AudioSource musicSource;
     void Start()
     {
-        load();
+        Load();
     }
-
-    public void changeVolume()
+    public void ChangeVolume()
     {
         AudioListener.volume = volumeSlider.value;
-        save();
+        Save();
     }
-    public void load()
+    public void Load()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("volume", 1);
+        volumeSlider.value = PlayerPrefs.GetFloat("volume", 1f);
+        musicSlider.value = PlayerPrefs.GetFloat("music", 1f);
+
+        AudioListener.volume = volumeSlider.value;
+
+        //if (musicSource != null)
+        //    musicSource.volume = musicSlider.value;
     }
-    public void save()
+    public void Save()
     {
         PlayerPrefs.SetFloat("volume", volumeSlider.value);
+        PlayerPrefs.SetFloat("music", musicSlider.value);
+        PlayerPrefs.Save();
     }
+
+    //public void ChangeMusic()
+    //{
+    //    musicSource.volume = musicSlider.value;
+    //    Save();
+    //}    
 }
