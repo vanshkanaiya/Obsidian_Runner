@@ -6,6 +6,7 @@ public class menuAndQuit : MonoBehaviour
     public GameObject levelCanvas;
     public GameObject menuCanvas;
     public GameObject settingCanvas;
+    public GameObject tutorialCanvas;
 
     int maxLevel;
 
@@ -50,5 +51,17 @@ public class menuAndQuit : MonoBehaviour
     {
         menuCanvas.SetActive(true);
         settingCanvas.SetActive(false);
+    }
+
+    public void tutorialCanvasUI()
+    {
+        menuCanvas.SetActive(false);
+        tutorialCanvas.SetActive(true);
+    }
+
+    public void backHomeFromTutorial()
+    {
+        menuCanvas.SetActive(true);
+        tutorialCanvas.SetActive(false);
     }
 }
