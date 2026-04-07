@@ -5,6 +5,8 @@ using TMPro;
 public class playerMovement : MonoBehaviour
 {
     int maxLevel;
+    const int MaxJumps = 2;
+    bool wasGrounded;
     
 
     public Rigidbody2D rb;
@@ -37,10 +39,9 @@ public class playerMovement : MonoBehaviour
             moveX = -moveSpeed;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && jumpFlag < MaxJumps) {
             rb.AddForce(Vector2.up * JumpForce);
             jumpFlag++;
-
         }
 
         rb.velocity = new Vector2(moveX, rb.velocity.y);
@@ -59,6 +60,60 @@ public class playerMovement : MonoBehaviour
         if (col.tag == "End") {
             nextLevel();
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        ResetJumpOnGroundContact(collision);
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (IsGroundCollision(collision))
+        {
+            wasGrounded = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Ground"))
+        {
+            wasGrounded = false;
+        }
+    }
+
+    void ResetJumpOnGroundContact(Collision2D collision)
+    {
+        if (!IsGroundCollision(collision))
+        {
+            return;
+        }
+
+        if (!wasGrounded)
+        {
+            jumpFlag = 0;
+        }
+
+        wasGrounded = true;
+    }
+
+    bool IsGroundCollision(Collision2D collision)
+    {
+        if (!collision.collider.CompareTag("Ground"))
+        {
+            return false;
+        }
+
+        foreach (ContactPoint2D contact in collision.contacts)
+        {
+            if (contact.normal.y > 0.5f)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     void restatLevel()
