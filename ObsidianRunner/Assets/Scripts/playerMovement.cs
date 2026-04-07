@@ -19,6 +19,11 @@ public class playerMovement : MonoBehaviour
 
     private int jumpFlag = 0;
 
+    public AudioSource audioSourcePlayer;
+    public AudioClip audioClipJump;
+    public AudioClip audioClipDeath;
+    public AudioClip audioClipLevelComplete;
+
 
     void Start()
     {
@@ -42,6 +47,7 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && jumpFlag < MaxJumps) {
             rb.AddForce(Vector2.up * JumpForce);
             jumpFlag++;
+            audioSourcePlayer.PlayOneShot(audioClipJump);
         }
 
         rb.velocity = new Vector2(moveX, rb.velocity.y);
@@ -54,10 +60,12 @@ public class playerMovement : MonoBehaviour
         if (col.tag == "Enemy")
         {
             Debug.Log("Enemy!!!");
+            audioSourcePlayer.PlayOneShot(audioClipDeath);
             restatLevel();
         }
 
         if (col.tag == "End") {
+            audioSourcePlayer.PlayOneShot(audioClipLevelComplete);
             nextLevel();
         }
     }

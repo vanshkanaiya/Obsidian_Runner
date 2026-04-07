@@ -39,6 +39,9 @@ public class LevelManager : MonoBehaviour
 
     public playerMovement plyMov;
 
+    public AudioSource audioSource;
+    public AudioClip audioClipAllLevelComplete;
+
     private void Awake()
     {
         // Singleton setup
@@ -98,6 +101,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             Debug.Log("All Levels Completed!");
+            audioSource.PlayOneShot(audioClipAllLevelComplete);
             AllLevelComplateIU.SetActive(true);
             scoreBoard.SetActive(false);
         }
