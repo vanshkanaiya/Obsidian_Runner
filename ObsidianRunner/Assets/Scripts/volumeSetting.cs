@@ -37,7 +37,7 @@ public class volumeSetting : MonoBehaviour
 
     //public void ChangeMusic()
     //{
-    //    musicSource.volume = musicSlider.value;
-    //    Save();
-    //}    
+    //        musicSource.volume = musicSlider.value;
+    //    //    Save();
+    //}
 }
